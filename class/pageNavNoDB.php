@@ -4,21 +4,30 @@ class pageNavNoDB{
     private $pageNum;
     private $totalPages;
     
+    function __construct(){ //建構子  
+        if(!isset($_SESSION)){
+            session_start();
+        }
+    }
+    
     function qPageData($url, $method, $data, $pageRecMax){
-        $data = [];
+        
+        //$data = [];
         
         isset($_GET['pageNum'])?$pageNum=$_GET['pageNum']:$pageNum=0;
         $this->pageNum=$pageNum;
         $startRec=$pageRecMax*$pageNum;                     ///算起點
         
-        $data['getCount'] = 1;
-        $tmpRes = getRemoteData($url, $method, $data);
+        $tmpData = $data;
+        $tmpData['getCount'] = 1;
+        $tmpRes = getRemoteData($url, $method, $tmpData);
         
         
         $totalRec=$tmpRes[0]['total'];        ///要先找出總數
         $this->totalPages=ceil($totalRec/$pageRecMax);      ///算最多幾頁
         
-        $data = [];
+        //echo var_dump($data);
+        //$data = [];
         $data['start'] = $startRec;
         $data['maxRec'] = $pageRecMax;
         

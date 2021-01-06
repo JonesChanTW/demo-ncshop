@@ -27,8 +27,8 @@ if(!isset($_SESSION)){
         <nav id="mainNav">
             <ul>
                 <li><a href="news.php">最新消息</a></li>
-                <li><a href="soap.php">手工皂</a></li>
-                <li><a href="oil.php">草本精油</a></li>
+                <li><a href="productlist.php?pd_type=1">手工皂</a></li>
+                <li><a href="productlist.php?pd_type=2">草本精油</a></li>
                 <?php
                     if(isset($_SESSION['nc_name'])){
                         echo '<li><a href="#">教學分享</a></li>';

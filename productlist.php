@@ -10,17 +10,22 @@ $url = 'http://localhost/ncshop1018/backplant/productlistQ.php';
 $method="POST";
 
 $productType=null;
-if(isset($_POST['pd_type'])){
-    $productType=$_POST['pd_type'];
+
+
+if(isset($_GET['pd_type'])){
+    $_SESSION['pd_type']=$_GET['pd_type'];
+}else if(!isset($_GET['pageNum'])){
+    $_SESSION['pd_type']='';
+}else{
+    if(!isset($_SESSION['pd_type'])){
+        $_SESSION['pd_type']='';
+    }
 }
 
-$qry="SELECT * FROM product";
-if($productType){
-    $qry.=" WHERE p_type=$productType";
-}
+$productType=$_SESSION['pd_type'];
 
 $data = [];
-$data['pd_type'] = $productType;
+$data['p_type'] = $productType;
 
 
 $res = $pageNav->qPageData($url, $method, $data, 8);

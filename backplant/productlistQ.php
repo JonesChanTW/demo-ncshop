@@ -8,14 +8,17 @@ $qry="SELECT * FROM product";
 
 if( isset( $_POST['getCount'] ) ){
     $qry = "SELECT count(p_id) as total FROM product";
+    $p_type = '';
+    if( isset( $_POST['p_type'] ) ){
+        $qry.=" WHERE p_type=".$_POST['p_type'];
+    }
 }else{
     $p_type = '';
     if( isset( $_POST['p_type'] ) ){
         $p_type = $_POST['p_type'];
-        
-        if($p_type != ''){
-            $qry.=" WHERE p_type=$p_type";
-        }
+    }
+    if($p_type != ''){
+        $qry.=" WHERE p_type=$p_type";
     }
     
     $start = '';
