@@ -2,14 +2,11 @@
 
 
 class dbo{
-    private $dbHost='192.168.100.12';
-    private $dbUser='admin';
-    private $dbPwd='1111';
-    private $db='ncdb';
-    //private $dbHost='localhost';
-    //private $dbUser='225129';
-    //private $dbPwd='a1254782';
-    //private $db='225129';
+    //private $dbHost='192.168.100.12';
+    private $dbHost='localhost';
+    private $dbUser='225129';
+    private $dbPwd='a1254782';
+    private $db='225129';
     
     protected $dbo;
     

@@ -3,8 +3,9 @@
 
 //$dbo=new dboQ();
 try{
-$dsn='mysql:host=192.168.100.12;dbname=ncdb;charset=utf8;';
-$db=new PDO($dsn, 'admin', '1111');    
+$dsn='mysql:host=localhost;dbname=225129;charset=utf8;';
+//$dsn='mysql:host=192.168.100.12;dbname=225129;charset=utf8;';
+$db=new PDO($dsn, '225129', 'a1254782');    
 }catch(PDOException $e){
     echo 'Err='.$e->getMessage();
     die();
