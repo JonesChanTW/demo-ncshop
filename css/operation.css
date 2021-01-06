@@ -1,0 +1,151 @@
+/*-------------      */
+.dataForm{
+    width: 90%;
+    margin: 0 auto;
+}
+.dataForm>p>label:first-child{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    vertical-align: top;
+}
+.dataForm [type="text"],.dataForm textarea{
+    width: 65%;
+}
+.dataForm textarea{
+    height: 5em;
+}
+.dataForm .formBtn{
+    text-align: center;
+}
+.dataForm .formBtn input{
+    width: 150px;
+}
+.col2{
+    column-count: 2;
+}
+.col2 p{
+    margin: 0 0 10px 0;
+}
+
+
+
+
+/*-------------*/
+
+table.dataList{
+    width: 95%;
+    margin: 0 auto;
+}
+table.dataList th{
+    padding: 5px 0;
+}
+table.dataList td{
+    border: 1px solid #404040;
+    padding: 5px;
+    text-align: center;
+}
+table.dataList td:first-child{
+    width:45px;
+}
+table.dataList td:last-child{
+    width:120px;
+}
+
+
+#orderList td:first-child{
+    width:auto;
+}
+
+
+
+
+/*-----資料操作功能--------*/
+.recFunc{
+    float:right;
+}
+.recFunc a{
+    background-color: #1b625f;
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    margin:20px;
+    border-radius: 5px;
+    font-size:1.1em;
+}
+.editBtn,.delBtn,#delSel{
+    background-color: #13523a;
+    text-decoration: none;
+    color: white;
+    padding: 1px 10px;
+    border-radius: 5px;
+    font-size:0.85em;
+}
+
+
+
+/*----------------*/
+
+.btnSty1{
+    background-color: rgba(255, 255, 255, 0.25);
+    color:#485c26;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    text-decoration: none;
+    padding: 3px 15px;
+    font-size: 0.95em;
+    text-align: center;
+}
+.btnSty1:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/*---資料分頁導覽-------*/
+.recPageNav{
+    margin-top: 5px;
+}
+.recPageNav p{
+/*    background-color: red;*/
+    text-align: right;
+}
+.recPageNav a{
+    margin:0 15px;
+    text-decoration: none;
+    background-color: #224980;
+    color: #e1e7f8;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+.recPageNav a.notWork{
+    opacity: 0.3;
+}
+.curPage{
+    background-color: gray;
+    color: white;
+    padding: 1px 5px;
+}
+
+
+
+
+
+
+
+/*--------------*/
+.msg{
+    background-color: rgba(255, 255, 0, 0.7);
+    text-align: center;
+    color: #275527;
+    padding: 3px 0;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.err{
+    color: red;
+}
+
+.info{
+    color:darkgreen
+}

@@ -1,0 +1,15 @@
+<?php
+
+    $URL='http://localhost/ncshop/mailAuth.php?m_username='.$m_username;
+    
+    $to      = $m_email;
+    $subject = 'NatureCare註冊通知';
+    $message = $m_name.'您好！<br>'.
+               '歡迎您在NatureCare註冊帳號<br>'.
+               '<a href="'.$URL.'">'.'點一下這認證您的帳號</a>';
+    $headers = 'Content-Type: text/html; charset=UTF-8'. "\r\n" .
+                'From: your@mail.com' ;
+
+    mail($to, $subject, $message, $headers);
+
+?>

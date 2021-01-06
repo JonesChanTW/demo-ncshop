@@ -1,0 +1,15 @@
+﻿
+<main>
+<!--
+   <div id="product">
+       圖片
+       <div id="p_desc">
+           <h2>品名</h2>
+           <p>特色/描述</p>
+           <p>成份/規格</p>
+           <p>商品金額</p>
+           <p><a class="addCartBtn" href="#">加入購物車</a></p>
+       </div>
+   </div>
+-->
+</main>

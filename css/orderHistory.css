@@ -1,0 +1,82 @@
+div.order{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+.orderRec{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+    
+}
+.orderDate{
+    margin: 0;
+    font-weight: bold;
+}
+.oId{
+    width: 130px;
+}
+.oTo{
+    width: 200px;
+}
+.oTotal{
+    width: 150px;
+}
+.orderRec th{
+
+}
+.orderRec th:last-child{
+    width: 40px;
+}
+
+.detailBtn{
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+
+
+
+.orderRec td{
+    text-align: center;
+    background-color: rgba(48, 121, 48, 0.45);
+}
+td.oDetail{
+}
+td.oDetail div{
+    padding: 10px 0;
+}
+td.oDetail table{
+    width: 90%;
+    margin-left:auto;
+
+}
+td.oDetail th{
+    border:none;
+}
+td.oDetail th:nth-child(1){
+    width: 100px;
+}
+td.oDetail th:nth-child(2){
+    width: 80px;
+}
+td.oDetail th:nth-child(4){
+    width: 80px;
+}
+td.oDetail th:nth-child(5){
+    width: 120px;
+}
+td.oDetail td:nth-child(2){
+    text-align: left;
+}
+td.oDetail td{
+    border:none;
+    background-color: transparent;
+    padding: 12px 0 2px 0;
+    border-bottom: 1px dashed black;         
+}
+td.oDetail td img{
+    width: 95%;
+    vertical-align: middle;
+    margin: 5px;
+}

@@ -1,0 +1,15 @@
+
+<main>
+<!--
+    <div class="pItem">
+        <div class="imgWrap">
+            商品圖片
+        </div>
+        <h2>品名</h2>
+        <p>說明</p>
+        <p>金額及加入購物車</p>
+    </div>
+-->
+
+</main>
+

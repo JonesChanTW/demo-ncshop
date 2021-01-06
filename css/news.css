@@ -1,0 +1,46 @@
+/*-----------------*/
+
+#newsDetail h2{
+    background-color: rgba(255, 255, 255, 0.3);
+/*    border-bottom: 5px double #2c763d;*/
+    padding: 10px 20px;
+    margin: 0;
+    letter-spacing: 0.2em;
+    border-radius: 10px;
+}
+#newsDetail p{
+    padding: 0 30px;
+    letter-spacing: 0.2em;
+}
+#newsDetail h2+p{
+    text-align: right;
+    letter-spacing: 0;
+}
+#newsDetail p:last-of-type{
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+.newsItem{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 40px);
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #292e33;
+}
+.newsItem h1{
+    font-size: 1.2em;
+    margin: 0;
+}
+.newsItem p:nth-of-type(1){
+    margin: 0;
+    font-size: 0.8em;
+    position: absolute;
+    right:5px;
+    bottom:3px;
+}
